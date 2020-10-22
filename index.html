@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Devinettes en Javascript</title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0" nonce="CaCT32cz"></script>
+    <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Game JS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#enigmes">Enigmes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#canva">Grattage</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fab fa-facebook-f"></i> Facebook
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fab fa-instagram"></i> Instagram</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i> Profile </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+          <a class="dropdown-item" href="#">My account</a>
+          <a class="dropdown-item" href="#">Log out</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<div class="container-fluid">
+  <div class="carousel" onclick="carousel();" id="test">
+
+  </div>
+</div>
+<!--/.Navbar -->
+<div class="container" id="Enigmes">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h1></h1>
+        <form id="devinette1" action="" method="" class="text-center">
+          <label for="question1">Je suis toujours devant tout le monde, mais personne ne peut me voir. Qui suis-je ?</label><br>
+          <input id="q1" type="text" name="question1" value="" ><br>
+          <span id="aideReponse"></span>
+          <br>
+          <button type="submit" name="button">valider</button>
+        </form>
+        <br>
+        <form  id="devinette2"  action="" method="" class="text-center">
+          <label for="question2">Je suis noir, je deviens rouge, et je finis blanc...</label><br>
+          <input id="q2" type="text" name="question2" value=""><br>
+          <span id="aideReponse1"></span>
+          <br>
+          <button type="submit" name="button">valider</button>
+        </form>
+        <br>
+        <form  id="devinette3" action="" method="" class="text-center">
+          <label for="question3">Trouvez l'errreur : 1 2 3 4 5 6 7 8 9</label><br>
+          <input id="q3" type="text" name="question3" value=""><br>
+          <span id="aideReponse2"></span>
+          <br>
+          <button type="submit" name="button">valider</button>
+        </form>
+        <br>
+        <h3 id="score"></h3>
+        <div class="bravo" id="bravo">
+          <img src="images/winner.jpg" alt=""><!-- image canva doit apparaître-->
+        </div>
+      </div>
+    </div>
+    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
+</div>
+
+<div class="canva" id="canva">
+
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/enigmes.js"></script>
+    <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  </body>
+</html>
