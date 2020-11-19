@@ -1,117 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Devinettes en Javascript</title>
-  </head>
-  <body>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v8.0" nonce="CaCT32cz"></script>
-    <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <a class="navbar-brand" href="#">Game JS</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#enigmes">Enigmes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#canva">Grattage</a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <i class="fab fa-facebook-f"></i> Facebook
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fab fa-instagram"></i> Instagram</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user"></i> Profile </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-          <a class="dropdown-item" href="#">My account</a>
-          <a class="dropdown-item" href="#">Log out</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-<br>
-<div class="container-fluid">
-  <div class="carousel" onclick="carousel();" id="test">
 
+<head>
+  <meta charset="utf-8">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>GameJS</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--******************************* Menu Navbar *******************************-->
+    <div class="menu" id="Top">
+      <ul class="nav justify-content-center elegant-color py-2">
+        <li class="nav-item">
+          <a class="nav-link active" href="#!"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Top">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Enigmes">Enigmes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#grattage">Casse-briques</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Kirby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#!">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <!--******************************* Caroussel *******************************-->
+    <div class="container-fluid">
+      <div id="carousel" onclick="carousel();">
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+    </div>
   </div>
-</div>
-<!--/.Navbar -->
-<div class="container" id="Enigmes">
-    <div class="row justify-content-center">
-      <div class="col-10">
-        <h1></h1>
-        <form id="devinette1" action="" method="" class="text-center">
-          <label for="question1">Je suis toujours devant tout le monde, mais personne ne peut me voir. Qui suis-je ?</label><br>
-          <input id="q1" type="text" name="question1" value="" ><br>
-          <span id="aideReponse"></span>
+  <!--******************************* Enigmes *******************************-->
+  <section id="Enigmes">
+    <h2></h2>
+    <div class=container>
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-8 col-sm-6">
+
+          <form id="devinette1" action="" method="" class="text-center">
+            <label for="question1">Je suis toujours devant tout le monde, mais personne ne peut me voir. Qui suis-je ?</label><br>
+            <input id="q1" type="text" name="question1" value="">
+            <input id="q1hidden" type="hidden" name="question1hidden" value=""><br>
+            <span id="aideReponse"></span>
+            <p id="tentative1"></p>
+            <br>
+            <button type="submit" name="button" id="btn" class="btn btn-elegant">valider</button><br>
+          </form>
           <br>
-          <button type="submit" name="button">valider</button>
-        </form>
-        <br>
-        <form  id="devinette2"  action="" method="" class="text-center">
-          <label for="question2">Je suis noir, je deviens rouge, et je finis blanc...</label><br>
-          <input id="q2" type="text" name="question2" value=""><br>
-          <span id="aideReponse1"></span>
+          <form id="devinette2" action="" method="" class="text-center">
+            <label for="question2">Je suis noir, je deviens rouge, et je finis blanc...</label><br>
+            <input id="q2" type="text" name="question2" value="">
+            <input id="q2hidden" type="hidden" name="question2hidden" value=""><br>
+            <span id="aideReponse2"></span>
+            <p id="tentative2"></p>
+            <br>
+            <button type="submit" name="button" id="btn2" class="btn btn-elegant">valider</button>
+          </form>
           <br>
-          <button type="submit" name="button">valider</button>
-        </form>
-        <br>
-        <form  id="devinette3" action="" method="" class="text-center">
-          <label for="question3">Trouvez l'errreur : 1 2 3 4 5 6 7 8 9</label><br>
-          <input id="q3" type="text" name="question3" value=""><br>
-          <span id="aideReponse2"></span>
+          <form id="devinette3" action="" method="" class="text-center">
+            <label for="question3">Trouvez l'errreur : 1 2 3 4 5 6 7 8 9</label><br>
+            <input id="q3" type="text" name="question3" value="">
+            <input id="q3hidden" type="hidden" name="question3hidden" value=""><br>
+            <span id="aideReponse3"></span>
+            <p id="tentative3"></p>
+            <br>
+            <button type="submit" name="button" id="btn3" class="btn btn-elegant">valider</button>
+          </form>
           <br>
-          <button type="submit" name="button">valider</button>
-        </form>
-        <br>
-        <h3 id="score"></h3>
-        <div class="bravo" id="bravo">
-          <img src="images/winner.jpg" alt=""><!-- image canva doit apparaître-->
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-8 col-sm-6">
+              <h3 id="score" class="text-center"></h3>
+              <div class="bravo col-md-12" id="bravo">
+                  <img src="images/winner.jpg" alt="image_winner">
+              </div>
+              <div class="perdu col-md-12" id="perdu">
+                  <img src="images/loser.jpg" alt="image_loser">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
-</div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2 id="resultat"></h2>
+      </div>
+    </div>
+  </section>
+  <section id="brick">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2 id="grattage">Casse-brique</h2>
+        <div class="col-lg-10 text-center">
+          <canvas id="myCanvas" width="480" height="320"></canvas><br>
+          <button id="clickMe" type="button" class="btn peach-gradient" onclick="draw();">Start</button><br>
+        </div>
+      </div>
+    </div>
+<br>
 
-<div class="canva" id="canva">
+  <script src="js/caroussel.js"></script>
+  <script src="js/enigmes.js"></script>
+  <script src="js/bricks.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
 
-</div>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/carousel.js"></script>
-<script type="text/javascript" src="js/enigmes.js"></script>
-    <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-  </body>
 </html>

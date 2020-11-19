@@ -3,18 +3,74 @@
   padding :0;
 }
 
-h1 {
-  margin: 50px;
+h2 {
+  margin: 30px;
   text-align: center;
-
+  font-weight: bold;
 }
 
 span {
   font-weight: bold;
-  color: green;
+  color :#329932;
+  font-size:1.15em;
 }
 
 h3 {
   font-weight: bold;
   color: crimson;
+}
+
+a {
+  color:white;
+  font-weight: bold;
+}
+
+p {
+color :crimson;
+font-weight: bold;
+}
+
+/************* Menu **************/
+.menu img {
+  width :50px;
+}
+
+/************* Caroussel **************/
+#carousel img {
+  height:850px;
+}
+
+#carousel span {
+  width: 50px;
+  height: 50px;
+}
+
+/************* Enigmes **************/
+#Enigmes {
+  margin :50px;
+}
+
+#instructions p {
+  font-size: 1em;
+}
+
+label {
+  color :#696969;
+  font-weight: bold;
+}
+
+/************* Casse_Briques **************/
+canvas {
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+#brick h2 {
+  color : white;
+}
+#brick {
+  background-image : url('../images/video-game.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
