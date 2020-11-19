@@ -34,6 +34,7 @@ document.getElementById("bravo").style.display="none";
 document.getElementById("perdu").style.display="none";
 
 document.getElementById('bravo').style.alignItems = "center";
+document.getElementById('perdu').style.alignItems = "center";
 
 var score = 0;
 var i = 0;
@@ -163,4 +164,4 @@ form3.addEventListener("submit", function (e) {
         }
     });
 
-//METTRE UN COMPTEUR DE REPONSE
+//Animation

@@ -46,9 +46,6 @@ font-weight: bold;
 }
 
 /************* Enigmes **************/
-#Enigmes {
-  margin :50px;
-}
 
 #instructions p {
   font-size: 1em;
@@ -59,6 +56,31 @@ label {
   font-weight: bold;
 }
 
+#perdu {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomInUp {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+  transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+  transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+  }
+
 /************* Casse_Briques **************/
 canvas {
   background-color: white;
@@ -68,6 +90,7 @@ canvas {
 
 #brick h2 {
   color : white;
+  margin: 0 0 40px ;
 }
 #brick {
   background-image : url('../images/video-game.png');

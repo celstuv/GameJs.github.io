@@ -59,17 +59,15 @@
   <!--******************************* Enigmes *******************************-->
   <section id="Enigmes">
     <h2></h2>
-    <div class=container>
+    <div class="container my-5">
       <div class="row justify-content-center">
         <div class="col-lg-10 col-md-8 col-sm-6">
-
           <form id="devinette1" action="" method="" class="text-center">
             <label for="question1">Je suis toujours devant tout le monde, mais personne ne peut me voir. Qui suis-je ?</label><br>
             <input id="q1" type="text" name="question1" value="">
             <input id="q1hidden" type="hidden" name="question1hidden" value=""><br>
             <span id="aideReponse"></span>
             <p id="tentative1"></p>
-            <br>
             <button type="submit" name="button" id="btn" class="btn btn-elegant">valider</button><br>
           </form>
           <br>
@@ -79,7 +77,6 @@
             <input id="q2hidden" type="hidden" name="question2hidden" value=""><br>
             <span id="aideReponse2"></span>
             <p id="tentative2"></p>
-            <br>
             <button type="submit" name="button" id="btn2" class="btn btn-elegant">valider</button>
           </form>
           <br>
@@ -89,41 +86,37 @@
             <input id="q3hidden" type="hidden" name="question3hidden" value=""><br>
             <span id="aideReponse3"></span>
             <p id="tentative3"></p>
-            <br>
             <button type="submit" name="button" id="btn3" class="btn btn-elegant">valider</button>
           </form>
           <br>
           <div class="row justify-content-center">
             <div class="col-lg-10 col-md-8 col-sm-6">
               <h3 id="score" class="text-center"></h3>
-              <div class="bravo col-md-12" id="bravo">
-                  <img src="images/winner.jpg" alt="image_winner">
+              <div class="col-md-12" id="bravo">
+                  <imgsrc="images/winner.jpg" alt="image_winner" class="rounded mx-auto d-block">
               </div>
-              <div class="perdu col-md-12" id="perdu">
-                  <img src="images/loser.jpg" alt="image_loser">
+              <div class="col-md-12" id="perdu" >
+                  <img src="images/loser.jpg" alt="image_loser" class="rounded mx-auto d-block">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <h2 id="resultat"></h2>
-      </div>
-    </div>
   </section>
   <section id="brick">
-    <div class="container">
+    <div class="container py-5">
       <div class="row justify-content-center">
         <h2 id="grattage">Casse-brique</h2>
         <div class="col-lg-10 text-center">
-          <canvas id="myCanvas" width="480" height="320"></canvas><br>
+          <canvas id="myCanvas" width="480" height="300"></canvas><br><br>
           <button id="clickMe" type="button" class="btn peach-gradient" onclick="draw();">Start</button><br>
         </div>
       </div>
     </div>
-<br>
+  </section>
+  <br>
+
 
   <script src="js/caroussel.js"></script>
   <script src="js/enigmes.js"></script>
