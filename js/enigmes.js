@@ -115,6 +115,7 @@ form2.addEventListener("submit", function (e) {
             if (i >= 3) {
               document.getElementById('tentative2').innerHTML = "3 essais déjà réalisés, Vous n'avez pas trouvé la bonne réponse \ud83d\ude15";
               document.getElementById("btn2").disabled = true;
+              document.getElementById("perdu").style.display="block";
             }
             //document.getElementById('aideReponse1').textContent = "Vous n'avez pas trouvé la bonne réponse \ud83d\ude15";
             question1.value = "avenir";
@@ -149,6 +150,7 @@ form3.addEventListener("submit", function (e) {
             if (i >= 3) {
               document.getElementById('tentative3').innerHTML = "3 essais déjà réalisés, Vous n'avez pas trouvé la bonne réponse \ud83d\ude15";
               document.getElementById("btn3").disabled = true;
+              document.getElementById("perdu").style.display="block";
             }
             question1.value = "avenir";
             question2.value = "charbon";
@@ -163,5 +165,3 @@ form3.addEventListener("submit", function (e) {
             document.getElementById('score').textContent = "Vous avez obtenu : " + score + " points";
         }
     });
-
-//Animation
