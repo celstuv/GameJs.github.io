@@ -33,10 +33,7 @@
           <a class="nav-link" href="#grattage">Casse-briques</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#!">Kirby</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#!">Disabled</a>
+          <a class="nav-link" href="#!">Mini-Jeux</a>
         </li>
       </ul>
     </div>
@@ -93,7 +90,7 @@
             <div class="col-lg-10 col-md-8 col-sm-6">
               <h3 id="score" class="text-center"></h3>
               <div class="col-md-12" id="bravo">
-                  <imgsrc="images/winner.jpg" alt="image_winner" class="rounded mx-auto d-block">
+                  <img src="images/winner.jpg" alt="image_winner" class="rounded mx-auto d-block">
               </div>
               <div class="col-md-12" id="perdu" >
                   <img src="images/loser.jpg" alt="image_loser" class="rounded mx-auto d-block">
@@ -110,17 +107,69 @@
         <h2 id="grattage">Casse-brique</h2>
         <div class="col-lg-10 text-center">
           <canvas id="myCanvas" width="480" height="300"></canvas><br><br>
-          <button id="clickMe" type="button" class="btn peach-gradient" onclick="draw();">Start</button><br>
+          <button id="clickMe" type="button" class="btn peach-gradient" onclick="draw();">Start</button>
+          <button id="clickStop" type="button" class="btn peach-gradient" onclick="stop();" data-toggle="tooltip" data-placement="top" title=" A jouer avec la souris ou les flèches directionnelles left - right">Stop</button><br>
         </div>
       </div>
     </div>
   </section>
+  <p><em></em></p>
   <br>
+  <section id="gamejs">
+    <h2>Mini Jeux</h2>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-8">
+            <canvas id="canvas1"></canvas>
 
+        </div>
+      </div>
+    </div>
+  </section><br>
+  <section id="footer">
+        <!-- Footer -->
+    <footer class="page-footer font-small elegant-color">
+      <!-- Footer Elements -->
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-12 py-5">
+            <div class="mb-5 flex-center">
+              <!--Linkedin -->
+              <a class="li-ic" href="https://www.linkedin.com/in/c%C3%A9linegana/" target="_blank">
+                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="git-ic" href="https://github.com/celstuv/GameJs" target="_blank">
+                <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Pinterest-->
+              <a class="pin-ic">
+                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+      <!-- Footer Elements -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://www.celinegana.com/">www.celinegana.com</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+  </section>
 
   <script src="js/caroussel.js"></script>
   <script src="js/enigmes.js"></script>
   <script src="js/bricks.js"></script>
+  <script src="js/gamejs.js"></script>
+
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->

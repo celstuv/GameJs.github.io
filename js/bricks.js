@@ -180,6 +180,9 @@ function drawBricks() {
   }
 }
 
+
+
+
   //Définir une boucle de dessin
 document.getElementById("clickMe").onclick = function draw() {
   /* Il existe un moyen d'effacer le contenu du canevas : clearRect().
@@ -268,9 +271,17 @@ document.getElementById("clickMe").onclick = function draw() {
   requestAnimationFrame(draw);
 }
 
-
 //la fonction draw() sera appelée toutes les 10 millisecondes
 //var interval = setInterval(draw, 10);
 
 //Amélioration du rendu avec requestAnimationFrame ()
 draw();
+
+//Bouton stop
+// document.getElementById("clickStop").onclick = function stop() {
+//   console.log(document.getElementById("clickStop"));
+//
+// }
+document.getElementById("clickStop").addEventListener("click", function draw() {
+    return;
+});

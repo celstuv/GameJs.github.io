@@ -97,3 +97,28 @@ canvas {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/************* GameJs **************/
+#gamejs {
+  background-image : url('../images/alien-ship.jpg');
+  background-size: cover;
+  background-color: transparent
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+
+#gamejs h2{
+  color : white;
+}
+
+#canvas1 {
+  width : 800px;
+  height : 500px;
+  border : 1px solid black;
+  /* background-image : url('../images/background.png'); */
+  /* background: crimson; */
+  /* position : absolute; */
+  /* top :50%;
+  left:50%;
+  transform : translate(-50%, -50%); */
+}

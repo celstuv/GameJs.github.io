@@ -11,7 +11,7 @@ document.getElementById("carousel").appendChild(imageElt); //rattacher div et im
 function carousel() { //fonction onclick
   /*La variable image cilbe l'attribut src afin d'incorperer les images du carousel*/
   var imageCarousselElt = document.getElementById('imagesCarousel').getAttribute('src');
-  console.log(imageCarousselElt);
+  //console.log(imageCarousselElt);
 
 
   switch (imageCarousselElt) {
@@ -22,6 +22,9 @@ function carousel() { //fonction onclick
       document.getElementById('imagesCarousel').src = 'images/game-hell.jpg';
       break;
     case 'images/game-hell.jpg':
+      document.getElementById('imagesCarousel').src = 'images/2.jpg';
+      break;
+    case 'images/2.jpg':
       document.getElementById('imagesCarousel').src = 'images/space-invaders.jpg';
       break;
   }

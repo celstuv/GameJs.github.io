@@ -13,7 +13,7 @@ para.style.marginTop = "10px";
  //Mettre du style css
 para.style.fontSize = "0.55em";
 //Le rattacher à la balise h1
-para.innerHTML ="3 questions au total - Elles apparaissent au fur à mesure quand vous trouvez la bonne réponse <br> Attention, Vous n'avez que 3 tentatives par question";
+para.innerHTML ="3 questions au total - Elles apparaissent au fur à mesure dès que vous trouvez la bonne réponse <br> Attention, Vous n'avez que 3 tentatives par question";
 document.querySelector('h2').appendChild(para);
 
 
